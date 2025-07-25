@@ -67,7 +67,7 @@ namespace UseBedrolls
 			{
 				if (!cellValidatorDir(c, Rot4.South) && !cellValidatorDir(c, Rot4.West))
 					return false;
-				using (PawnPath path = map.pathFinder.FindPath(root, c, pawn))
+				using (PawnPath path = map.pathFinder.FindPathNow(root, c, pawn))
 				{
 					return path.TotalCost < 500;
 				}
