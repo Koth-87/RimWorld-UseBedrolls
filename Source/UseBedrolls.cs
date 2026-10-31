@@ -19,7 +19,7 @@ namespace UseBedrolls
 #endif
 			Harmony harmony = new Harmony("Uuugggg.rimworld.UseBedrolls.main");
 			
-			harmony.PatchAll();
+			harmony.PatchAll(Assembly.GetExecutingAssembly());
 		}
 
 		public override void DoSettingsWindowContents(Rect inRect)
